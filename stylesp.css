@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+html,
+body {
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #AAAAAA;
+    font-family: 'Instrument Serif', serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+#central {
+    height: 90%;
+    padding: 4%;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+#contenedor-input {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+#txt {
+    padding: 4%;
+    background-color: #AAAAAA;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    height: 100%;
+    font-size: 1.5em;
+    resize: none;
+    font-family: 'Instrument Serif', serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+#txt::placeholder {
+    color: #ffffff;
+}
+
+#contenedor-botones-inferior {
+    height: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em;
+    margin: auto;
+}
+
+.botones {
+    margin: auto;
+    height: 2.8em;
+    width: 10em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(166, 215, 204);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: #ffffff;
+    font-family: 'Instrument Serif', serif;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    box-shadow: 8px 8px 15px rgb(73, 72, 72);
+    text-shadow: 2px 2px 2px white;
+    transition: 200ms;
+}
+
+.botones:hover {
+    transform: scale(1.03);
+    font-size: 1.11em;
+    box-shadow: 8px 8px 20px rgb(0, 0, 0);
+
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+}
+
+#boton1 {
+    background-color: rgb(98, 211, 166);
+
+}
+
+#lateral {
+    height: 90%;
+    display: grid;
+    grid-template-rows: 7fr 1fr;
+    padding: 5%;
+    margin: 5%;
+    background-color: rgb(166, 215, 204);
+    border-radius: 10px;
+}
+
+#contenedor-span {
+    overflow: scroll;
+    overflow-wrap: break-word;
+    color: rgb(0, 0, 0);
+}
+
+#result {
+    display: flex;
+    margin: 2%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    text-align: center;
+    max-height: 28em;
+    font-size: 1.3em;
+}
+
+#lupa {
+    width: 90%;
+    height: 65%;
+    padding: auto;
+    margin: auto;
+    max-width: 450px;
+}
+
+#result p {
+    font-size: 0.8em;
+}
+
+#contenedor-boton-lateral {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#boton2 {
+    background-color: rgb(105, 106, 112);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+}
+
+@media(width < 470px) {
+
+    #container {
+        grid-template-columns: 1fr;
+    }
+
+    #txt {
+        padding: 2%;
+    }
+
+    #lateral {
+        margin-top: 40px;
+    }
+
+    #contenedor-botones-inferior {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .botones {
+        width: 8em;
+    }
+}
+
+@media(width <915px) {
+
+    #txt {
+        padding: 2%;
+    }
+
+    #container {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    #contenedor-botones-inferior {
+        gap: 10px;
+    }
+}

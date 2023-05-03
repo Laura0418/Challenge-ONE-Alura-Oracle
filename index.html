@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesp.css">
+    <title>Encriptador de textos!</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="central">
+            <div id="contenedor-input">
+                <textarea id="txt" placeholder="Ingresa el texto aquí"></textarea>
+            </div>
+            <div id="contenedor-botones-inferior">
+                <button id="boton1" class="botones" onclick="encryptText();"><img class="icons" src="images/lock.svg">
+                    Encriptar!</button>
+                <button class="botones" onclick="decryptText();"><img class="icons" src="images/unlock.svg">
+                    Desencriptar</button>
+                <button class="botones" onclick="cleanAll();"><img class="icons" src="images/clean.svg">
+                    Limpiar</button>
+            </div>
+        </div>
+        <div id="lateral">
+            <div id="contenedor-span">
+                <span id="result">
+                    <img id="lupa" src="images/buscador.jpg">
+                    <h3>Ingresa el texto que deseas encriptar o desencriptar</h3>
+                    <p> &#9432; Ingresa solo letras minúsculas, sin acentos, caracteres especiales, ni números!</p>
+                </span>
+            </div>
+            <div id="contenedor-boton-lateral">
+                <button id="boton2" class="botones" onclick="copyToClipboard();"><img class="icons"
+                        src="images/copy.svg"> Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
