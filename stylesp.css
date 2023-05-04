@@ -163,7 +163,7 @@ span>img {
     }
 }
 
-@media screen and (width <915px) {
+@media screen and (width < 915px) {
 
     #txt {
         padding: 2%;
