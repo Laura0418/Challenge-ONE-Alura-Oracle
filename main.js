@@ -55,6 +55,12 @@ function copyToClipboard() {
   navigator.clipboard.writeText(content);
 }
 
+function paste(){
+  navigator.clipboard
+  .readText()
+  .then((clipText) => (textarea.value = clipText));
+}
+
 function cleanAll() {
   textarea.value = "";
   cleanResult();

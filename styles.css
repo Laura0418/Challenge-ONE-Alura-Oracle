@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding: 4%;
 }
 
 #txt {
@@ -50,8 +51,8 @@ body {
 
 #contenedor-botones-inferior {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
     margin: auto;
 }
 
@@ -151,11 +152,20 @@ span>img {
     }
 
     #contenedor-botones-inferior {
+        width: 100%;
         grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .botones {
+        width: 12em;
+        height: 3em;
+        letter-spacing: 2px;
+        font-size: 0.8em;
     }
 }
 
-@media (max-width: 915px) {
+@media (min-width:470px) and (max-width: 915px) {
 
     #container {
         grid-template-columns: 1fr;
@@ -163,6 +173,14 @@ span>img {
     }
 
     #contenedor-botones-inferior {
-        gap: 20px;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .botones {
+        width: 12em;
+        height: 3em;
+        letter-spacing: 2px;
+        font-size: 0.8em;
     }
 }
