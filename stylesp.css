@@ -120,7 +120,7 @@ body {
     font-size: 1.3em;
 }
 
-span img {
+span>img {
     width: 90%;
     height: 65%;
     padding: auto;
