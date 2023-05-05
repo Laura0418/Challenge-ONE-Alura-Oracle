@@ -3,7 +3,6 @@
 html,
 body {
     height: 100%;
-    max-height: 100%;
     width: 100%;
     display: flex;
     background-color: #AAAAAA;
@@ -17,7 +16,6 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    align-items: center;
 }
 
 #central {
@@ -59,7 +57,7 @@ body {
 .botones {
     margin: auto;
     height: 40%;
-    width: 90%;
+    width: 100%;
     color: rgb(0, 0, 0);
     background-color: rgb(166, 215, 204);
     border-top-right-radius: 10px;
@@ -90,6 +88,7 @@ body {
 }
 
 #lateral {
+    margin: auto 0;
     height: 90%;
     display: grid;
     grid-template-rows: 6fr 1fr;
@@ -116,10 +115,10 @@ body {
 }
 
 span>img {
-    max-height: 65%;
     padding: auto;
     margin: auto;
-    max-width: 420px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 #result p {
@@ -137,7 +136,7 @@ span>img {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px black;
     width: 60%;
-    height: 50%;
+    height: 55%;
 }
 
 @media (max-width: 470px) {
@@ -147,9 +146,9 @@ span>img {
     }
 
     #central {
-        height: 60%;
-        grid-template-rows: 3fr 1fr;
+        grid-template-rows: 2fr 1fr;
     }
+
 
     #contenedor-botones-inferior {
         width: 100%;
@@ -159,11 +158,8 @@ span>img {
     }
 
     .botones {
-        margin: auto;
         min-height: 3em;
         width: 100%;
-        letter-spacing: 3px;
-        font-size: 1.2em;
     }
 }
 
@@ -176,12 +172,6 @@ span>img {
 
     #lateral {
         width: 90%;
-        margin: auto;
-    }
-
-    #contenedor-botones-inferior {
-        width: 100%;
-        gap: 0.8em;
     }
 
     .botones {
