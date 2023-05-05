@@ -107,9 +107,9 @@ body {
 #result {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
+    width: 100%;
     text-align: center;
     max-height: 26em;
     font-size: 1.2em;
@@ -125,6 +125,7 @@ span>img {
 #result p {
     font-size: 0.8em;
 }
+
 
 #contenedor-boton-lateral {
     display: grid;
@@ -145,6 +146,11 @@ span>img {
         grid-template-columns: 1fr;
     }
 
+    #central {
+        height: 60%;
+        grid-template-rows: 3fr 1fr;
+    }
+
     #contenedor-botones-inferior {
         width: 100%;
         grid-template-columns: 1fr 1fr;
@@ -158,11 +164,6 @@ span>img {
         width: 100%;
         letter-spacing: 3px;
         font-size: 1.2em;
-    }
-
-    .botones:hover {
-        transform: scale(1.001);
-
     }
 }
 

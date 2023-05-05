@@ -103,6 +103,7 @@ body {
     overflow: scroll;
     overflow-wrap: break-word;
     color: rgb(0, 0, 0);
+    justify-content: center;
 }
 
 #result {
