@@ -99,7 +99,7 @@ body {
 }
 
 #contenedor-span {
-    overflow: scroll;
+    overflow: auto;
     overflow-wrap: break-word;
     color: rgb(0, 0, 0);
 }
